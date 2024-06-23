@@ -136,7 +136,7 @@ static void learn()
 	cublasCreate(&blas);
 
 	float err;
-	int iter = 2;
+	int iter = 10;
 	
 	double time_taken = 0.0;
 
