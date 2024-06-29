@@ -206,16 +206,16 @@ static void test()
 			++error;
 		}
         fprintf(stdout,"True: %d, Predicted: %d\n", test_set[i].label, classify(test_set[i].data));
-        int j;
-        for (j=0; j<784; j++) {
-            if (test_set[i].data[0][j] != 0) {
-                printf("%1.1lf ", test_set[i].data[0][j]);
-            } else {
-                printf("   ");
-            }
-            // printf("%1.1lf ", test_set[i].data[0][j]);
-            if ((j+1) % 28 == 0) putchar('\n');
-        }
+        // int j;
+        // for (j=0; j<784; j++) {
+        //     if (test_set[i].data[0][j] != 0) {
+        //         printf("%1.1lf ", test_set[i].data[0][j]);
+        //     } else {
+        //         printf("   ");
+        //     }
+        //     // printf("%1.1lf ", test_set[i].data[0][j]);
+        //     if ((j+1) % 28 == 0) putchar('\n');
+        // }
 	}
 
 	fprintf(stdout, "Error Rate: %.2lf%%\n",
