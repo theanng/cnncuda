@@ -205,7 +205,7 @@ static void test()
 		if (classify(test_set[i].data) != test_set[i].label) {
 			++error;
 		}
-        fprintf(stdout,"True: %d, Predicted: %d\n", test_set[i].label, classify(test_set[i].data));
+        // fprintf(stdout,"True: %d, Predicted: %d\n", test_set[i].label, classify(test_set[i].data));
         // int j;
         // for (j=0; j<784; j++) {
         //     if (test_set[i].data[0][j] != 0) {
